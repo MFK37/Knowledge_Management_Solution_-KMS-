@@ -1,0 +1,166 @@
+.searchBar-container {
+    margin: 0;
+    font-family: 'sans-serif';
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.searchBar-container .searchBar {
+    margin-top: 10px;
+    position: relative;
+}
+
+.searchBar .searchInput {
+    /* margin: 10px;
+    padding-left: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px; */
+
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: 350px;
+    max-height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+}
+
+.searchBar button {
+    /* height: 30px;
+    border: none;
+    background-color: #2f80ed;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 16px; */
+
+    padding: 5px 10px;
+    /* background-color: #00897b; */
+    color: white;
+    background-color: #6991c7;
+    border: 0;
+    border-radius: 2px;
+    min-height: 30px;
+}
+
+.searchBar button:hover {
+    background-color: #74a1dd;
+    cursor: pointer;
+}
+
+.searchResult {
+    position: absolute;
+    z-index: 100;
+    margin: 5px auto;
+    left: 0;
+    right: 0;
+    min-height: fit-content;
+    max-height: 250px;
+    width: 424px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 10px #ddd;
+
+}
+
+.searchResult .content {
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+
+    /* border-bottom: 2px solid black; */
+}
+
+.searchResult .content:hover {
+    background-color: #dbe0e5;
+    color: white;
+
+    /* border-bottom: 2px solid black; */
+}
+
+.EnterToJump {
+    border-radius: 5px;
+    background-color: #f6f8fa;
+    padding: 4px;
+    margin-left: 2px;
+}
+
+.EnterToJump svg {
+
+    margin-left: 3px;
+    /* display: inline-flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+
+.searchBar .searchInput .searchResult .content p {
+    padding-left: 10px;
+
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.displayResult .contentCard {
+    width: 100%;
+    /* max-width: 800px; */
+    margin: 10px auto;
+    box-shadow: 0 0 10px #ddd;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+}
+
+.contentCard a {
+    color: #4777b5;
+    text-decoration: none;
+}
+
+.contentCard a:hover {
+    text-decoration: underline;
+}
+
+.displayResult .contentCard .downloadButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.displayResult h3 {
+    text-align: left;
+}
+
+.createdBy , .dateFile{
+    color: #777;
+    font-weight: 500;
+    font-size: 14px;
+}
+.dateFile{
+    margin-right: 10px;
+}
+.fileInformation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+

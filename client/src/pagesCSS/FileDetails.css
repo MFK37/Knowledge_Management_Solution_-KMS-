@@ -1,0 +1,207 @@
+.File_Content {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.FileCard {
+    display: grid;
+    /* grid-template-columns:repeat(auto-fll,auto); */
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 20px;
+
+    /* grid-template-areas: "leftSide leftSide leftSide leftSide leftSide leftSide " "rightSide rightSide"; */
+}
+
+.NavTab {
+    border-bottom: 2px solid #6991c7;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.NavTab a {
+    text-decoration: none;
+    padding: 10px;
+    color: #6991c7;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavTab a:hover {
+    background-color: rgba(222, 235, 255, 0.9);
+}
+
+.NavTab a svg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.FileCard .FileCardLeft {
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); */
+    /* background-color: antiquewhite; */
+    grid-column: 1/8;
+    /* grid-column:span(4); */
+    /* grid-area: leftSide; */
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.FileCardLeft .title {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    color: #6991c7;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.FileCardLeft .title h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.FileCardLeft .title svg:hover {
+    cursor: pointer;
+}
+
+.personalInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.personalInfo .creator,
+.personalInfo .entity_name {
+    margin: 0;
+
+}
+.creator a{
+    color:#4777b5;
+    text-decoration: none;
+}
+.creator a:hover{
+    text-decoration: underline;
+}
+
+.descHeader,
+.tagsHeader {
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.Desc {
+    padding: 10px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.FileCard .FileCardRight {
+    /* grid-column: span(2); */
+    /* grid-area: rightSide; */
+    grid-column: 8/11;
+    /* Dosen't include the last element  */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+
+.FileCardRight button {
+
+    padding: 5px 10px;
+    /* background-color: #00897b; */
+    color: white;
+    background-color: #6991c7;
+    border: 0;
+    border-radius: 2px;
+    min-height: 30px;
+
+}
+
+.FileCardRight button:hover {
+    background-color: #74a1dd;
+    cursor: pointer;
+
+}
+
+/* Start Release CSS */
+.FileCardLeftRelease {
+    display: grid;
+    grid-column: 1/8;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.FileCardLeftRelease .title {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    color: #6991c7;
+    font-size: 24px;
+}
+
+.FileCardLeftRelease a {
+    text-decoration: none;
+}
+
+.FileCardLeftRelease a:hover {
+    text-decoration: underline;
+    text-decoration-color: #6991c7;
+}
+
+.FileCardRightRelease {
+    grid-column: 8/11;
+    /* Dosen't include the last element  */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.FileCardRightRelease button {
+
+    padding: 5px 10px;
+    /* background-color: #00897b; */
+    color: white;
+    background-color: #6991c7;
+    border: 0;
+    border-radius: 2px;
+    min-height: 30px;
+}
+
+.FileCardRightRelease button:hover {
+    background-color: #74a1dd;
+    cursor: pointer;
+
+}
+
+/* End Release CSs */
+
+.File_Content .NavTab .active {
+    background-color: rgba(222, 235, 255, 0.7);
+}

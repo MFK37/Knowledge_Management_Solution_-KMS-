@@ -1,0 +1,169 @@
+.FileHeader {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.FileHeader .form {
+    /* margin: 10px auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+.FileHeader .form h3 {
+    text-align: left;
+}
+
+.FileHeader .form div p {
+    text-align: left;
+    margin: 0;
+}
+
+.FileHeader .form div input {
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.FileHeader .form .descField {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.FileHeader .form .descField .desc {
+    height: 200px;
+    padding: 0;
+    border: none;
+    overflow: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.FileHeader .form .tagsField {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.FileHeader .form input {
+    border: 1px solid lightgray;
+}
+
+.FileHeader .form .tagsField .tags-container {
+    width: 100%;
+    border: 1px solid lightgray;
+    /* min-height: 60px;
+    max-height: fit-content; */
+    margin: 10px 0;
+    /* display: flex; */
+    /* align-items: center;
+    flex-wrap: wrap; */
+}
+
+.FileHeader .form .tagsField .tags-container .tagInput {
+    /* min-height: 60px;
+    max-height: fit-content; */
+    flex-grow: 1;
+    /* padding: 0; */
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.tagResult {
+    margin: 3px;
+    /* background-color: #DDF4FF;
+    color: #1c6cda; */
+    background-color: #6991c7;
+    color: #ffffff;
+
+    padding: 5px 10px;
+    /* color: black; */
+    border-radius: 20px;
+    /* width: auto; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagResult .tagDelete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+
+}
+.uploadedFileContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.numFiles{
+    text-align: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.uploadedFileResult{
+    margin: 3px auto;
+    background-color: #DDF4FF;
+    color: black;
+    min-width: 300px;
+    padding: 5px 10px;
+    /* color: black; */
+    border-radius: 5px;
+    font-weight: 600;
+    /* width: auto; */
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.uploadedFileResult .fileTagDelete{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+    color:red;
+    font-weight: 800;
+}
+.uploadedFileResult svg:hover{
+    cursor: pointer;
+
+}
+.filesField {
+    border: 5px dotted grey;
+    margin-bottom: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filesField p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.627);
+}
+
+.submitButton {
+    margin: 10px auto;
+    padding: 7px;
+    border-radius: 3px;
+    width:max-content;
+    text-align: center;
+    background-color: #6991c7;
+    color: white;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: #74a1dd;
+    cursor: pointer;
+}

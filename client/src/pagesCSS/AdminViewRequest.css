@@ -1,0 +1,177 @@
+.bodytest {
+    font-family: 'lato', sans-serif;
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Tablecontainer {
+    max-width: 1000px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.811);
+
+}
+
+h2 small {
+    font-size: 0.5em;
+    color: rgba(0, 0, 0, 0.811);
+
+}
+
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsive-table .table-header {
+    background-color: #6991c7;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color:#86d9ff; */
+}
+
+.responsive-table .table-row {
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.811);
+}
+
+.responsive-table .col-1 {
+    flex-basis: 20%;
+}
+
+.responsive-table .col-2 {
+    flex-basis: 20%;
+}
+
+.responsive-table .col-3 {
+    flex-basis: 20%;
+}
+
+.responsive-table .col-4 {
+    flex-basis: 20%;
+}
+
+.responsive-table .col-5 {
+    flex-basis: 20%;
+}
+
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+
+    .responsive-table li {
+        display: block;
+    }
+
+    .responsive-table .col {
+        flex-basis: 100%;
+    }
+
+    .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .responsive-table .col:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+}
+
+.icons-col {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.icons-col svg {
+    cursor: pointer;
+
+}
+
+/* Start Feedback css */
+.feedback-res,
+.feedback-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.feedback-overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.feedback-content {
+    position: absolute;
+    text-align: left;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.feedback-content svg {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.feedback-content svg:hover {
+    background-color: rgba(255, 222, 222, 0.9);
+    border-radius: 5px;
+
+}
+
+.close-feedback-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.feedback-content input {
+    /* height: 200px; */
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* End Feedback css */
